@@ -34,7 +34,7 @@ btnAndamento.addEventListener('click', ()=> {
         showCancelButton: false,
         focusConfirm: false,
         confirmButtonText: `
-        <a href="https://github.com/taymilagres/Bom-Sabor" style="color:#fff;"><i class="fa fa-thumbs-up"></i> Acessar Github</a>
+        <a href="https://github.com/" style="color:#fff;"><i class="fa fa-thumbs-up"></i> Acessar Github</a>
         `,
       });
     

@@ -4,7 +4,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
+
+
 
 main{
     transition: 0.7s;
@@ -33,7 +36,7 @@ nav > ul > a > li {
 
 p {
     font-family: 'Lato';
-    color: #fff;
+    color: #ffffff;
 }
 
 header > .presentation > h1{
@@ -51,9 +54,11 @@ header > .presentation > h3 {
     font-family: 'Jura';
 }
 
-.skills > h1, .txtAboutMe > h1, .projects > h1, .study > h1 {
+
+
+.skills > h1, .projects > h1, .study > h1 {
     font-family: 'Jura';
-    color: #4db6ac;
+    color: #000000;
     
 }
 
@@ -61,13 +66,13 @@ header > .presentation > h3 {
 
 .hardSkills > h2 {
     font-family: 'Inter';
-    color: #4db6ac;
+    color: #000000;
     font-weight: 700;
 }
 
 .softSkills > h2 {
     font-family: 'Inter';
-    color: #4db6ac;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -117,3 +122,9 @@ button {
 .gmail > p {
     font-family: 'Lato';
 }
+
+h1, .txtAboutMe {
+    font-family: 'Jura';
+    color: #4db6ac;
+}
+

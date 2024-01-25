@@ -74,7 +74,7 @@ hr {
 /* Header */
 
 header {
-    background-color: #09E4E4;
+    background-color: #029292;
     width: 100%;
     height: 60vh;
     margin-top: 3%;
@@ -139,13 +139,19 @@ header > img {
     justify-content: center;
     margin-bottom: 5%;
     font-size: 2vw;
+    
 }
 
+.sobre> h1{
+    color: ffff;
+}
 .txtAboutMe > p{
     font-size: 1.5vw;
     font-weight: 300;
 
 }
+
+
 
 .foto {
     position: absolute;
@@ -153,15 +159,15 @@ header > img {
     left: 22%;
     z-index: 1;
     width: 25vw;
-    max-width: 100%;
-    border-bottom: 2px solid #09E4E4;
+    max-width: 25vw;
+    border-bottom: 2px solid #029292; /* Borda inferior */
 
 }
 
 .backFoto {
     position: relative;
     z-index: 0;
-    margin-left: 35%;
+    margin-left: 39%;
     max-width: 15vw;
     max-height: 200vh;
 }
@@ -200,7 +206,7 @@ header > img {
 }
 
 .hardSkills{
-    background-color: #09E4E4;
+    background-color: #029292;
     width: 35vw;
     height: 50vh;
     
@@ -300,7 +306,7 @@ header > img {
 }
 
 .softSkills{
-    background-color: #09E4E4;
+    background-color: #029292;
     width: 35vw;
     height: 50vh;
     display: flex;
@@ -391,7 +397,6 @@ header > img {
     display: grid;
     grid-template-columns: 22% 22% 22%;
     grid-template-rows: 50% 50% ;
-    
     gap: 5%;
     align-items: center;
     justify-content: center;
@@ -402,7 +407,7 @@ header > img {
 .study{
     height: 45vh;
 }
- .study > h1 {
+.study > h1 {
     display: flex;
     align-self: center;
     align-items: center;
@@ -424,7 +429,7 @@ header > img {
     justify-content: center;
 }
 
-.sql:hover, .cSharp:hover, .bootstrap:hover, .react:hover{
+.sql:hover, .cSharp:hover, .bootstrap:hover, .react:hover, .php:hover, .laravel:hover {
     transform: scale(1.1);
 }
 
@@ -465,6 +470,7 @@ header > img {
 }
 
 .gmail p, .linkedin p, .github p {
+    color:#000000;
     font-size: 1.2em;
 }
 
