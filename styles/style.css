@@ -20,8 +20,23 @@ html{
 
 /* Navegation */
 nav {
+    position: fixed; /* Fixa o menu no topo da página */
+    top: 0; /* Alinha o menu no topo da janela do navegador */
+    left: 0; /* Alinha o menu à esquerda da janela do navegador */
+    width: 100%; /* Faz o menu expandir para a largura total da janela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos da página */
     display: flex;
+    backdrop-filter: blur(2px);
     justify-content: center;
+    box-shadow: 0 4px 2px -2px gray; /* Adiciona uma sombra sutil abaixo do menu para um efeito elevado */
+    background-color: rgb(0 0 0 / 84%);
+    
+}
+
+
+
+body {
+    padding-top: 60px;
 }
 
 nav > ul {
@@ -39,7 +54,7 @@ nav > ul > a > li {
 }
 
 nav > ul > a > li:hover{
-    color: #09E4E4;
+    color: #90cefe;
     
 }
 
@@ -113,7 +128,6 @@ header > img {
     position: relative;
     width: 40%;
 }
-
 .txtAboutMe{
     width: 60%;
     padding-right: 10%;
@@ -139,9 +153,9 @@ header > img {
     left: 22%;
     z-index: 1;
     width: 25vw;
-    max-width: 25vw;
-    border: 3px solid #09E4E4 !important;
-    border-radius: 50%;
+    max-width: 100%;
+    border-bottom: 2px solid #09E4E4;
+
 }
 
 .backFoto {
