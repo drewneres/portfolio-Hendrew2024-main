@@ -23,10 +23,10 @@ a {
     text-decoration: none;
 }
 
-nav > ul > a > li {
+nav > ul > li > a {
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: 'Jura';
     color: #4db6ac;
 }
 
@@ -128,3 +128,27 @@ h1, .txtAboutMe {
     color: #4db6ac;
 }
 
+.menu-item {
+    position: relative;
+    color: #4db6ac;
+    text-decoration: none;  
+}
+
+.menu-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left center; /* Define o ponto de origem da transformação */
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-item:hover:before {
+    visibility: visible;
+    transform: scaleX(1); /* Estica o pseudoelemento para sua largura total */
+}
