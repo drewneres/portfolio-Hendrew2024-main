@@ -34,7 +34,9 @@ nav {
     
 }
 
-
+img{
+    object-fit: cover;
+}
 
 /*body {
     padding-top: 60px;
@@ -365,7 +367,8 @@ header > img {
     background-color: #000000;
     border: none;
     border-radius: 20px;
-    margin-right: 4%
+    margin-right: 4%;
+    transition: 0.5s;
 }
 
 .projetoBtn:hover{
