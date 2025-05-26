@@ -1,0 +1,106 @@
+.skills {
+    padding: 4rem 2rem;
+    background-color: var(--bg-color);
+}
+
+.skills-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.skillContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hardSkills, .softSkills {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hardSkills:hover, .softSkills:hover {
+    transform: translateY(-5px);
+}
+
+.skillBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skillBox img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.skillBox img:hover {
+    transform: scale(1.1);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contentSoft ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contentSoft li {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contentSoft li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .skillContainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .skillBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2); /* brilho leve ciano */
+  cursor: pointer;
+}

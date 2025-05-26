@@ -355,7 +355,7 @@ header > img {
 .card-title{
     font-family: 'Jura';
     font-weight: 700;
-    color: #09E4E4;
+    color: #007777;
 }
 
 .card-img-top{
@@ -409,7 +409,7 @@ header > img {
 /* Studying */
 
 .study{
-    height: 45vh;
+    height: 30vh;
 }
 .study > h1 {
     display: flex;
@@ -488,5 +488,102 @@ header > img {
     height: 4vh;
     margin-top: 1%;
     font-family: 'Inter';
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.1); /* brilho leve ciano */
+  cursor: pointer;
+}
+
+.projetoBoxBtn,
+.projetoBoxBtnToDo,
+.projetoBoxBtnPlanty {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.projetoBtn {
+  background-color: #008B8B;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+  min-width: 120px;
+  text-align: center;
+}
+
+.projetoBtn:hover {
+  background-color: #007d8a;
+  transform: scale(1.03);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-text {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.skills-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skillCard {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.05);
+  text-align: left;
+}
+
+.skillCard h2 {
+  color: #00d2d3;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+
+.skillCard p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.section-title {
+  text-align: center;
 }
 
